@@ -1,9 +1,11 @@
 // components/HeroSection.jsx
 import Image from "next/image";
+import SplitText from "../../../components/SplitText";
 
 const HeroSection = () => {
   return (
-    <section className=" relative bg-linear-to-r from-teal-900 to-green-500 text-white py-20 overflow-hidden">
+    // <section className="relative bg-linear-to-r from-teal-900 to-green-500 text-white py-20 overflow-hidden">
+    <section className="relative  text-black py-20 overflow-hidden">
       {/* Background visual */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -14,7 +16,7 @@ const HeroSection = () => {
           quality={80}
           className="opacity-40"
         />
-        <div className="absolute inset-0 bg-black opacity-30"></div>{" "}
+        {/* <div className="absolute inset-0 bg-black opacity-30"></div>{" "} */}
         {/* Overlay for better text contrast */}
         {/* Additional blur effect on the left side for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-transparent to-transparent backdrop-blur-[0px] lg:backdrop-blur-[0.5px]" />
@@ -24,7 +26,20 @@ const HeroSection = () => {
         {/* Content */}
         <div className="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
           <h1 className="font-serif text-4xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-4 drop-shadow-lg">
-            Your Journey Starts Here
+            <SplitText
+              text="Your Journey Begins Here"
+              className="font-semibold font-serif mb-8"
+              delay={100}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+              // onLetterAnimationComplete={handleAnimationComplete}
+            />
           </h1>
           <p className="font-sans text-lg sm:text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto lg:mx-0 drop-shadow-md">
             Find the best deals on flights, hotels, cars, and more in one place.

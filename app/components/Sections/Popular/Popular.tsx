@@ -1,9 +1,28 @@
+"use client";
+import SplitText from "../../../../components/SplitText";
 export default function Popular() {
-
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="font-serif text-3xl font-bold text-center mb-8">Popular Destinations</h2>
+        <h2 className="text-center mb-8">
+          <SplitText
+            text="Popoular Destinations"
+            className="text-4xl font-semibold font-serif mb-8"
+            delay={100}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            onLetterAnimationComplete={handleAnimationComplete}
+          />
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {/* Example popular destinations */}
           <div className="rounded-lg overflow-hidden shadow-lg">
@@ -36,7 +55,9 @@ export default function Popular() {
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">Seoul, South Korea</h3>
-              <p className="text-gray-600">A vibrant city blending tradition and modernity.</p>
+              <p className="text-gray-600">
+                A vibrant city blending tradition and modernity.
+              </p>
             </div>
           </div>
           <div className="rounded-lg overflow-hidden shadow-lg">
@@ -47,11 +68,13 @@ export default function Popular() {
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">California, USA</h3>
-              <p className="text-gray-600">Known for its diverse climate and geography.</p>
+              <p className="text-gray-600">
+                Known for its diverse climate and geography.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
