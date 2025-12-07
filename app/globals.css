@@ -3,6 +3,66 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+/* Primary */
+  --color-stormy-teal-50: #e9f8fb;
+  --color-stormy-teal-100: #d4f1f7;
+  --color-stormy-teal-200: #a9e3ef;
+  --color-stormy-teal-300: #7ed6e7;
+  --color-stormy-teal-400: #53c8df;
+  --color-stormy-teal-500: #28bad7;
+  --color-stormy-teal-600: #2095ac;
+  --color-stormy-teal-700: #187081;
+  --color-stormy-teal-800: #104a56;
+  --color-stormy-teal-900: #08252b;
+  --color-stormy-teal-950: #061a1e;
+
+  --color-pacific-blue-50: #edf6f8;
+  --color-pacific-blue-100: #dbecf0;
+  --color-pacific-blue-200: #b6d9e2;
+  --color-pacific-blue-300: #92c6d3;
+  --color-pacific-blue-400: #6db3c5;
+  --color-pacific-blue-500: #49a0b6;
+  --color-pacific-blue-600: #3a8092;
+  --color-pacific-blue-700: #2c606d;
+  --color-pacific-blue-800: #1d4049;
+  --color-pacific-blue-900: #0f2024;
+  --color-pacific-blue-950: #0a161a;
+
+  --color-sky-blue-50: #edf6f8;
+  --color-sky-blue-100: #dbedf0;
+  --color-sky-blue-200: #b7dae1;
+  --color-sky-blue-300: #92c8d3;
+  --color-sky-blue-400: #6eb6c4;
+  --color-sky-blue-500: #4aa3b5;
+  --color-sky-blue-600: #3b8391;
+  --color-sky-blue-700: #2c626d;
+  --color-sky-blue-800: #1e4148;
+  --color-sky-blue-900: #0f2124;
+  --color-sky-blue-950: #0a1719;
+
+  --color-parchment-50: #f5f2ef;
+  --color-parchment-100: #ebe4e0;
+  --color-parchment-200: #d7cac1;
+  --color-parchment-300: #c3afa2;
+  --color-parchment-400: #af9583;
+  --color-parchment-500: #9c7a63;
+  --color-parchment-600: #7c6250;
+  --color-parchment-700: #5d493c;
+  --color-parchment-800: #3e3128;
+  --color-parchment-900: #1f1814;
+  --color-parchment-950: #16110e;
+
+  --color-amber-glow-50: #fff4e5;
+  --color-amber-glow-100: #ffeacc;
+  --color-amber-glow-200: #ffd599;
+  --color-amber-glow-300: #ffbf66;
+  --color-amber-glow-400: #ffaa33;
+  --color-amber-glow-500: #ff9500;
+  --color-amber-glow-600: #cc7700;
+  --color-amber-glow-700: #995900;
+  --color-amber-glow-800: #663c00;
+  --color-amber-glow-900: #331e00;
+  --color-amber-glow-950: #241500;
 }
 
 @theme inline {
