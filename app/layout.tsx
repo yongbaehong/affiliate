@@ -25,10 +25,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TheSelect.com - Curated Affiliate Deals",
+  title: "South Korea Travel Deals & Trip Ideas | The Select",
   description:
-    "Curated deals from Amazon, LEGO, and top retailers. Fast comparison grid and one-click affiliate links.",
-};
+    "Discover the best South Korea travel deals and unique itinerary ideas. From Seoul city tours to Jeju Island getaways, plan your perfect Korean vacation today.",
+    openGraph: {
+    title: 'South Korea Travel Deals & Itinerary Ideas',
+    description: 'Discover the best South Korea travel deals and unique itinerary ideas. From Seoul city tours to Jeju Island getaways, plan your perfect Korean vacation today.',
+    type: 'website',
+  },
+}; 
 
 export default function RootLayout({
   children,
