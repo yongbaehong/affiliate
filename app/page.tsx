@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Popular from "./components/Sections/Popular/Popular";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Header />
         <HeroSection />
         <Popular />
+      <Footer />
       </main>
     </div>
   );
